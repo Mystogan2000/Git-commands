@@ -38,3 +38,17 @@ Git branch -m New_name [Changes current branch name]
 Discard local changes in git
 1. git reset --hard
 git clean -fxd  or git pull
+
+####################################################################
+# Checkout the desired branch
+git checkout <branch>
+# Undo the desired commit
+git revert <commit>
+# Update the remote with the undo of the code
+# The force is a tricky flag since it will force the push but
+# your administrator can block it, so if it's not an option you
+# can delete the old branch and push it again
+git push origin <branch> --force
+
+####################################################################
+
