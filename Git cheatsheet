@@ -1,0 +1,40 @@
+##############################################################
+Creating PR:
+	1. Creat and checkout to local_work_branch
+	( 'git checkout -b bugfix/FI-1212')
+	2. Add changes to local branch
+	3. Make git pull(to update local branch with master)
+	4. Check 'git status' and 'git diff'
+	5. Then 'git add file_name' (files u have modified,each file in separate cmd)
+	6. 'git commit' ---> opens file there add defect ID and comments,summary
+	7. 'git push origin local_branch'
+#################################################################
+git cheery-pick commit-id
+#################################################################
+Adding and removing previous commit:
+
+Git add
+Git commit --amend
+Git push --force origin bugfix/branch
+
+##################################################################
+Git fetch --> This shows what new changes are made to the current local directory  to compare with remote repo
+
+Git pull --> it does git fetch and also copies all the new changes that showed in the git fetch.
+Git fetch
+
+Manually doing merge confilits
+From your private branch do:=Git pull origin master
+##################################################################
+Cloneing a specific branch in git:-
+
+Git clone -b <branch> <remote-repo>
+##################################################################
+Git branch name changes:
+
+Git branch -m New_name [Changes current branch name]
+
+###################################################################
+Discard local changes in git
+1. git reset --hard
+git clean -fxd  or git pull
